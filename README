@@ -1,0 +1,8 @@
+Adds syntax highlighted (via dpSyntaxHighlighter) sections to an HTML page from its own source.  Discovers existing inline &lt;style&gt; elements, HTML content inside elements with a class "markup", and &lt;script&gt; elements with inline content and creates necessary markup for the highlighter.
+
+To use this script, include the following:
+* In <head>, a <link rel="stylesheet" type="text/css" href="path/to/dpSyntaxHighlight.css">
+* Just before </body>, <script src="path/to/dpSyntaxHighlighter.js"></script> AND
+* <script src="path/to/dpSyntaxHightlightExample.js"></script>
+
+See the inline docs in the script file for configuration options.
