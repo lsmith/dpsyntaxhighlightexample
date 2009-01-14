@@ -89,7 +89,7 @@ hi = {
         },
         getByClass : function (c,tag,root) {
             var els = (root || d).getElementsByTagName(tag || '*'),
-                i,j,len,n,hits = [];
+                i,j=0,len,n,hits = [];
 
             for (i = 0, len = els.length; i < len; ++i) {
                 n = els[i];
