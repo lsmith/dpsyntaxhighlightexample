@@ -186,7 +186,7 @@ hi = {
 
         for (i = 0,len = markup.length; i < len; ++i) {
             content += hi.toTextarea(markup[i].innerHTML.
-                        replace(/<\/textarea>/g,'&lt;/textarea>'),'HTML');
+                        replace(/<(?=\/textarea>)/ig,'&lt;'),'HTML');
         }
 
         if (content) {
